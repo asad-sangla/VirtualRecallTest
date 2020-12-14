@@ -78,7 +78,7 @@ public static IEnumerable<int> GetPanelArrays(int numPanels)
     {
         var floor = (int)Math.Floor(Math.Sqrt(numPanelsCounter));
         return (int)Math.Pow(floor, 2);
-    
+    }
     return result;
 }
 
