@@ -38,6 +38,8 @@ Part 2) Coding challenge. There are a few functions to implement. Please submit 
 
 ## Answer - Test 2
 
+Just got to the dir '__[base dir of your machine]\VirtualRecallTest\Src\VirtualRecall\VirtualRecall.Application.Tests__' and run comand '__dotnet test__' to check all test are passed.
+
 ```C#
 /// <summary>
 /// Gets all points x2 + y2 less than equal to 1 = number of points inside circle
