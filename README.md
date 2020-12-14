@@ -66,14 +66,15 @@ public static double Average(IEnumerable<IHasNumeric> set)
 public static IEnumerable<int> GetPanelArrays(int numPanels)
 {
     var result = new List<int>();
-    var numPanelsCounter = numPanels
+    var numPanelsCounter = numPanels;
     do
     {
         var floor = (int)Math.Floor(Math.Sqrt(numPanelsCounter));
         var panelSquare = (int)Math.Pow(floor, 2);
-        result.Add(panelSquare)
-        numPanelsCounter -= panelSquare
-    } while (numPanelsCounter > 0)
+        result.Add(panelSquare);
+        numPanelsCounter -= panelSquare;
+    } while (numPanelsCounter > 0);
+    
     return result;
 }
 
@@ -87,7 +88,8 @@ public static IEnumerable<int> GetPanelArrays(int numPanels)
 public static bool AnyGranted(Capabilities granted, Capabilities requested)
 {
     if (requested == Capabilities.None)
-        return true
+        return true;
+
     var capabilities = Enum.GetValues(typeof(Capabilities));
     return capabilities.Cast<Capabilities>().Where(capability => capability !Capabilities.None)
         .Any(capability => requested.HasFlag(capability) && granted.HasFlag(capability));
