@@ -69,11 +69,15 @@ public static IEnumerable<int> GetPanelArrays(int numPanels)
     var numPanelsCounter = numPanels;
     do
     {
-        var floor = (int)Math.Floor(Math.Sqrt(numPanelsCounter));
-        var panelSquare = (int)Math.Pow(floor, 2);
-        result.Add(panelSquare);
+        var panelSquare = GetSquarePanel(numPanelsCounter);
+        result.Add(GetSquarePanel(numPanelsCounter));
         numPanelsCounter -= panelSquare;
     } while (numPanelsCounter > 0);
+
+    static int GetSquarePanel(int numPanelsCounter)
+    {
+        var floor = (int)Math.Floor(Math.Sqrt(numPanelsCounter));
+        return (int)Math.Pow(floor, 2);
     
     return result;
 }

@@ -10,12 +10,12 @@ using Xunit.Abstractions;
 
 namespace VirtualRecall.Application.Tests
 {
-    public class Tests
+    public class LibClassTests
     {
         private readonly ITestOutputHelper _console;
         private readonly IEnumerable<SomeNumeric> _countableSet;
 
-        public Tests(ITestOutputHelper console)
+        public LibClassTests(ITestOutputHelper console)
         {
             _console = console;
             var set = new double[] { 4, 6, 1, 3, 7 };
