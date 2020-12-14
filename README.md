@@ -116,6 +116,7 @@ Part 3) Some front-end JS and CSS. Please submit the .html file with the changes
 <div id="somediv">
     <p class="a">Leave this black</p>
     <p class="b">Make this red</p>
+    <!-- It is considered as best practise to have a class with prefix js- to use in javascript when working in team oriented environment where UI?UX and Front Developer works in teams -->
     <p class="c js-c">Make this sentence green when <a id="colorClicker" href="javascript:void(0);">this</a> link is clicked</p>
 </div>
 
