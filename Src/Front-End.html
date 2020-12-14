@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Virtual Recall | Front End Test</title>
+
+    <style type="text/css">
+        .a, .c {
+            color: black;
+        }
+
+        .b {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- Without changing anything below this line -->
+<div id="somediv">
+    <p class="a">Leave this black</p>
+    <p class="b">Make this red</p>
+    <p class="c js-c">Make this sentence green when <a id="colorClicker" href="javascript:void(0);">this</a> link is clicked</p>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function () {
+        $('#colorClicker').on('click', (e) => {
+            $('.js-c').css('color', 'green');
+        });
+    });
+</script>
+</body>
+</html>
