@@ -30,7 +30,7 @@ CREATE NONCLUSTERED INDEX [IX_dbo.ClientAnimal_ClientId] ON ClientAnimal (Client
 CREATE NONCLUSTERED INDEX [IX_dbo.Product_Sku] ON Product (SkU)
 
 -- FOR FURTHER IMPORVMENT
--- I would suggest that we should have Clinet Id refrence in Animals table only if an animal is not owned by more than clients
+-- I would suggest that we should have Clinet Id refrence in Animals table only if an animal is not owned by more than one clients
 -- This is just to avoid multiple joins we can say it as database denormalization
 ```
 
