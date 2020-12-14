@@ -49,6 +49,7 @@ public static double Approx(Point[] pts)
 {
     var numberOfPointsInCircle = (double)pts.Select(p => Math.Pow(p.X, 2) + Math.Pow(p.Y2)).Count(xyScore => xyScore <= 1);
     return (numberOfPointsInCircle / pts.Count()) * 4;
+}
 
 /// <summary>
 /// Give average of input numerics
