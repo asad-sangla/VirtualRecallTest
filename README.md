@@ -70,7 +70,7 @@ public static IEnumerable<int> GetPanelArrays(int numPanels)
     do
     {
         var panelSquare = GetSquarePanel(numPanelsCounter);
-        result.Add(GetSquarePanel(numPanelsCounter));
+        result.Add(panelSquare);
         numPanelsCounter -= panelSquare;
     } while (numPanelsCounter > 0);
 

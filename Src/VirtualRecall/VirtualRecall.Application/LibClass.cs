@@ -46,7 +46,7 @@ namespace VirtualRecall.Application
             do
             {
                 var panelSquare = GetSquarePanel(numPanelsCounter);
-                result.Add(GetSquarePanel(numPanelsCounter));
+                result.Add(panelSquare);
 
                 numPanelsCounter -= panelSquare;
 
