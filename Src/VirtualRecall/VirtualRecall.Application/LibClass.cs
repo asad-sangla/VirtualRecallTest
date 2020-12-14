@@ -11,7 +11,7 @@ namespace VirtualRecall.Application
     {
         /// <summary>
         /// Gets all points x2 + y2 less than equal to 1 = number of points inside circle
-        /// Gives approximation fo given point as Pi/4
+        /// Gives approximation for given points as Pi/4
         /// </summary>
         /// <param name="pts"></param>
         /// <returns></returns>
